@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
 	printf("%.2f\n",suma);
 	printf("%.2f\n",resta);
 	printf("%.2f\n",multiplicacion);
-	printf(" %.2f\n",division);
+	printf("%.2f\n",division);
 
 
 	return 0;
