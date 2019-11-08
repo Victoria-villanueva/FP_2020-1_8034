@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 
 int main(int argc, char *argv[]){
 	float x, y, resultado;
@@ -10,11 +10,10 @@ int main(int argc, char *argv[]){
 	y=atof(argv[2]);
 	//asignamos valores
 	resultado=1;
-	for(i=0; i<y, i++){
+	for(i=0; i<y; i++){
 		//i aumentara en uno hasta llegar al exponente
 		resultado=resultado*x;
 	}
-	printf("%.2f\n",resultado);
+	printf("%.2f\n", resultado);
 	return 0;
 }	
-

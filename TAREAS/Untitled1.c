@@ -1,19 +1,19 @@
-#include <stdio.h>
-#include <stdlib.h>
-int main(int argc, char* argu[]){
-	//se declara la otra lista para guardar la lista de argu
-	int lista[argc],suma=0;
-	//argc es el numero de argumentos
-	float promedio;
-	//es para que pueda incluirse los decimales
-	for (int i=1;i<argc;i++){
-		lista[i]=atoi(argu[i]);
-		//se copia argu a lista
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(int argc, char *argv[]){
+	float x, y, resultado;
+	int i; 
+	//se declaran las variables xy
+	//x es la base, mientras y es el exponente
+	x=atof(argv[1]);
+	y=atof(argv[2]);
+	//asignamos valores
+	resultado=1;
+	for(i=0; i<y; i++){
+		//i aumentara en uno hasta llegar al exponente
+		resultado=resultado*x;
 	}
-	for (int i=1;i<argc;i++){
-		suma=suma+lista[i];
-	}
-	promedio=(float)suma/(argc-1);
-	printf("%.2f\n",promedio);
+	printf("%.2f\n", resultado);
 	return 0;
-	}
+}	
